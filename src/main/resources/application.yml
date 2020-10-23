@@ -1,1 +1,16 @@
+server:
+  port: 8081
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: payment_order
+      auto-offset-reset: earliest
+    producer:
+      bootstrap-servers: localhost:9092

@@ -25,4 +25,3 @@ public class PaymentServiceImpl implements PaymentService {
                 .orElseThrow(() -> new ObjectNotFoundException(id, Payment.class.getSimpleName()));
     }
 }
-`
